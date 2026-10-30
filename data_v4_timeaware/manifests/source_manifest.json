@@ -1,0 +1,93 @@
+{
+  "schema_version": "data_v4_timeaware.source_manifest.v1",
+  "sources": {
+    "train_samples": {
+      "relative_path": "train/train_samples.csv",
+      "sha256": "7B01A08D84E0BD380768424CEEF58388BD0BB1EB28A2AC6D1920EE3DA8E39E78",
+      "row_count": 2754,
+      "time_ranges": {
+        "reference_time": {
+          "min": "2024-03-01T01:44:00",
+          "max": "2024-11-30T23:15:00"
+        }
+      }
+    },
+    "operation_hourly": {
+      "relative_path": "train/operation_hourly.csv",
+      "sha256": "9884E95D986F0F4A9D76DF47F74C780A518578CCF622C1C0C49132350F31FD0B",
+      "row_count": 9360,
+      "time_ranges": {
+        "clock": {
+          "min": "2024-03-01T00:00:00",
+          "max": "2025-03-25T23:00:00"
+        }
+      }
+    },
+    "burden_change": {
+      "relative_path": "train/burden_change.csv",
+      "sha256": "32113BC49B2ED7C59B3EA876984A5C93DB421B8A5E84E88021CA63E04D416C04",
+      "row_count": 4021,
+      "time_ranges": {
+        "cal_time": {
+          "min": "2024-02-28T13:03:34",
+          "max": "2025-03-25T20:15:40"
+        }
+      }
+    },
+    "tap_history_train": {
+      "relative_path": "train/tap_history_train.csv",
+      "sha256": "8730C8712EA8333E47B8404CD84067F8644B2BC157E4F225B4F1A7C6A706B986",
+      "row_count": 2754,
+      "time_ranges": {
+        "reference_time": {
+          "min": "2024-03-01T01:44:00",
+          "max": "2024-11-30T23:15:00"
+        },
+        "tap_end_time": {
+          "min": "2024-03-01T03:52:00",
+          "max": "2024-12-01T01:32:00"
+        }
+      }
+    },
+    "test_a_samples": {
+      "relative_path": "test/test_a_samples.csv",
+      "sha256": "FDE461C86E094935DD173B9462D208965701DEA6C54D06C64D4D4E6AEE96A554",
+      "row_count": 657,
+      "time_ranges": {
+        "reference_time": {
+          "min": "2024-12-01T01:44:00",
+          "max": "2025-01-31T22:36:00"
+        }
+      }
+    },
+    "test_b_samples": {
+      "relative_path": "test/test_b_samples.csv",
+      "sha256": "B62EFFACE7CC9ACDCD8FDC227E7E9CB44937A5DB97F639A1A95221E5E5FC2356",
+      "row_count": 548,
+      "time_ranges": {
+        "reference_time": {
+          "min": "2025-02-01T00:26:00",
+          "max": "2025-03-26T22:19:00"
+        }
+      }
+    }
+  },
+  "legacy_data_v3_sentinels": {
+    "folds/full_train.parquet": {
+      "exists": true,
+      "sha256": "65D1ECAC879CF5BB8D2F0D115745670C6DEDFA337CE025E758D142BA272DDA89"
+    },
+    "folds/test_a.parquet": {
+      "exists": true,
+      "sha256": "FF5A12A464585C4CFFA0086BAEAF9E6CC6867ECCD23D405FC30D1297ADEEDD45"
+    },
+    "sample_index.parquet": {
+      "exists": true,
+      "sha256": "DDCC066A12B2B28A7BCB1B347876C005E203B16E5D22235798B7171C17E24C70"
+    },
+    "manifests/source_manifest.json": {
+      "exists": true,
+      "sha256": "4FCF18EF31A47A4CE67D255E5EE7E39E99AF2B188CCA9EFC555E6B358916084F"
+    }
+  }
+}

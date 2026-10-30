@@ -1,0 +1,13 @@
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.pytest_cache/
+.idea/
+.vscode/
+.env
+.env.*
+raw/
+初赛数据集/
+rebuild_timeaware*/
+*.log
