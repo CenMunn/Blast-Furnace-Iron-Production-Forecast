@@ -7,7 +7,6 @@ venv/
 .vscode/
 .env
 .env.*
-raw/
 初赛数据集/
 rebuild_timeaware*/
 *.log
